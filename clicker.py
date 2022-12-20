@@ -67,7 +67,7 @@ if __name__ == "__main__":
             # locate the img of item in folder
             # converting to grayscale imporves performance, confidence adjusts how accurate the match it,
             # and region (left, top, width, height) bounds the dimensions of search window
-            loc = pyautogui.locateCenterOnScreen(img, confidence = 0.94, grayscale=True,
+            loc = pyautogui.locateCenterOnScreen(img, confidence = 0.93, grayscale=True,
                                             region=(220,200,880,780))
             if loc: # if img found, returns coordinates of center
                 attempts = 0 # reset attempts to 0 when img found

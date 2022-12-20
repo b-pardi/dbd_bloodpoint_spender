@@ -15,7 +15,7 @@ dir = dir1
 while 1:
     if keyboard.is_pressed(CAP_KEY):
         mouse_pos = pyautogui.position()
-        region = (mouse_pos[0], mouse_pos[1], 64, 64)
+        region = (mouse_pos[0], mouse_pos[1], 54, 54)
         im = pyautogui.screenshot("temp.png", region=region)
         fn = input("What is the name of this item? ")
         priority = input("What is item priority? ")
